@@ -145,7 +145,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="fw-medium text-uppercase text-primary mb-2">Kontak</p>
-                    <h1 class="display-5 mb-4">Kontak Kami</h1>
+                    <h3 class="mb-4">Kontak Kami</h3>
                     <p class="mb-4">
                         <?= $konfig->contact_us; ?></a>.
                     </p>
