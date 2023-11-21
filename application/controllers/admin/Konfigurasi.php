@@ -15,10 +15,14 @@ class Konfigurasi extends CI_Controller {
         $this->db->from('home');
         $foto_home = $this->db->get()->result_array();
 
+        $this->db->from('logo');
+        $foto_logo = $this->db->get()->result_array();
+
         $data = array(
-            'judul_halaman' => 'Halaman Konfigurasi',
+            'judul_halaman' => 'Konfigurasi',
             'konfig'        => $konfig,
             'foto_home'   => $foto_home,
+            'foto_logo'   => $foto_logo,
         );
 		$this->template->load('template_admin','admin/konfigurasi',$data);
 	}

@@ -197,11 +197,7 @@ order to legally use the theme for your project. * Copyright ThemeSelection
                                     <script>
                                         document.write(new Date().getFullYear());
                                     </script>
-                                    , made with ❤️ by
-                                    <a
-                                        href="https://instagram.com/musaa.nz/"
-                                        target="_blank"
-                                        class="footer-link fw-bolder">musaa.nz</a>
+                                    , Sandpaper Holiday Trans
                                 </div>
                             </div>
                         </footer>

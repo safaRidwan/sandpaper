@@ -7,6 +7,10 @@
             <span class="tf-icons bx bx-edit"></span> Foto Home
         </button>
 
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#fotologo">
+            <span class="tf-icons bx bx-edit"></span> Logo
+        </button>
+
         <!-- Modal Leader -->
         <div class="modal fade" id="fotoHome" tabindex="-1" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-lg" role="document">
@@ -43,6 +47,48 @@
                 </form>
             </div>
         </div>
+
+
+
+        <!-- Modal Leader -->
+        <div class="modal fade" id="fotologo" tabindex="-1" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-lg" role="document">
+
+                <form action="<?= base_url('admin/home/logo') ?>" method="post" enctype="multipart/form-data">
+                    <!-- lari ke Controller admin/kategori/simpan -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Ganti Logo ga?</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <?php foreach ($foto_logo as $logo) { ?>
+                                <a href="<?= base_url('asset/upload/logo/'.$logo['foto_logo']) ?>" target="_blank">
+                                    <span class="btn rounded-pill btn-info tf-icons bx bx-search-alt-2"> Lihat Foto</span>
+                                </a>
+                            <?php } ?>
+
+                            <div class="col mb-3 mt-3">
+                                <label class="form-label">Foto Logo</label>
+                                <input type="file" class="form-control" name="foto_logo"
+                                    accept="image/png, image/jpeg, image/jpg" required>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                Close
+                            </button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
 
 
 

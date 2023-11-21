@@ -15,7 +15,7 @@
             <div class="card-body">
                 <div class="col mb-3">
                     <label class="form-label">Judul</label>
-                    <input type="text" class="form-control" placeholder="Judul Foto" required name="judul_detail">
+                    <input type="text" class="form-control" placeholder="Judul Foto" name="judul_detail">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Pilih Foto</label>
@@ -42,6 +42,7 @@
                                 class="btn btn-outline-danger" onclick="return confirm('yakin deck, mau hapus?')">
                                 <span class="tf-icons bx bx-trash">Hapus</span>
                             </a>
+                            
                         </div>
                     </div>
                 </div>

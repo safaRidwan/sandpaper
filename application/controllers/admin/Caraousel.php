@@ -12,7 +12,7 @@ class Caraousel extends CI_Controller {
         $this->db->from('caraousel');
         $caraousel = $this->db->get()->result_array();
         $data = array(
-            'judul_halaman' => 'Halaman Caraousel',
+            'judul_halaman' => 'Caraousel',
             'caraousel' => $caraousel
         );
 		$this->template->load('template_admin','admin/caraousel',$data);

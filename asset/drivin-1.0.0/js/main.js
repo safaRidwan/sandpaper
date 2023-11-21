@@ -1,6 +1,12 @@
 (function ($) {
     "use strict";
 
+    // Facts counter
+    $('[data-toggle="counter-up"]').counterUp({
+        delay: 10,
+        time: 2000
+    });
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -24,12 +30,6 @@
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
         }
     });
-
-        // Facts counter
-        $('[data-toggle="counter-up"]').counterUp({
-            delay: 10,
-            time: 2000
-        });
     
     
     // Back to top button

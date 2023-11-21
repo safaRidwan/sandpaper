@@ -19,7 +19,7 @@ class About extends CI_Controller {
         $foto_about = $this->db->get()->result_array();
         
         $data = array(
-            'judul_halaman' => 'Halaman About',
+            'judul_halaman' => 'About',
             'konfigabout'   => $konfigabout,
             'profil'   => $profil,
             'foto_about'   => $foto_about,

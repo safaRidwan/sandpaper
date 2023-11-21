@@ -306,18 +306,6 @@
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label">video Youtube</label>
-                    <div class="input-group input-group-merge">
-                        <span class="input-group-text">
-                            <i class="bx bxl-youtube"></i></span>
-                        </span>
-                        <input type="url" class="form-control" name="youtube" value="<?= $konfigabout->youtube; ?>"
-                            placeholder="link Youtube">
-                        <span class="input-group-text">https://</span>
-                    </div>
-                </div>
-
-                <div class="mb-3">
                     <label class="form-label">Visi</label>
                     <div class="input-group input-group-merge">
                         <span class="input-group-text">

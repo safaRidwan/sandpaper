@@ -16,7 +16,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Pilih Foto dengan ukuran 1:3</label>
-                    <input class="form-control" type="file" name="foto">
+                    <input class="form-control" type="file" name="foto" required>
                 </div>
                 <div class="card-footer mt-3">
                     <button type="submit" class="btn btn-primary">Simpan</button>

@@ -15,6 +15,9 @@ class About extends CI_Controller {
         $this->db->from('about2');
         $konfigfoto = $this->db->get()->result_array();
 
+        $this->db->from('logo');
+        $fotologo = $this->db->get()->result_array();
+
         $this->db->from('kategori');
         $kategori = $this->db->get()->result_array();
         $this->db->from('konten a');
@@ -22,12 +25,13 @@ class About extends CI_Controller {
         $this->db->join('user c','a.username=c.username','left');
         $this->db->order_by('judul','ASC');
         $data = array(
-            'judul_halaman' => 'About',
+            'judul_halaman' => 'Tentang | Sandpaper Holiday Trans',
             'konfig' => $konfig,
             'kategori' => $kategori,
             'konfigabout' => $konfigabout,
             'konfigfoto' => $konfigfoto,
             'profil' => $profil,
+            'fotologo' => $fotologo,
         );
 		$this->load->view('about',$data);
 	}
