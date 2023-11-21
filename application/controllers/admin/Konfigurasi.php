@@ -19,7 +19,7 @@ class Konfigurasi extends CI_Controller {
         $foto_logo = $this->db->get()->result_array();
 
         $data = array(
-            'judul_halaman' => 'Konfigurasi',
+            'judul_halaman' => 'Konfigurasi Admin | Sandpaper Holiday Trans',
             'konfig'        => $konfig,
             'foto_home'   => $foto_home,
             'foto_logo'   => $foto_logo,

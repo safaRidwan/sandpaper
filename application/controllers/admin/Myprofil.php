@@ -11,7 +11,7 @@ class Myprofil extends CI_Controller {
 	public function index(){
 
         $data = array(
-            'judul_halaman' => 'My Profil',
+            'judul_halaman' => 'My Profil Admin | Sandpaper Holiday Trans',
         );
 		$this->template->load('template_admin','admin/myprofil',$data);
 	}

@@ -17,7 +17,7 @@ class User extends CI_Controller
         $this->db->order_by('nama', 'ASC');
         $user = $this->db->get()->result_array();
         $data = array(
-            'judul_halaman' => 'Data Pengguna',
+            'judul_halaman' => 'Data Pengguna Admin | Sandpaper Holiday Trans',
             'user' => $user
         );
         $this->template->load('template_admin', 'admin/user_index', $data);

@@ -11,7 +11,7 @@ class Home extends CI_Controller {
 	public function index(){
 
         $data = array(
-            'judul_halaman' => 'Dashboard Admin SP',
+            'judul_halaman' => 'Dashboard Admin | Sandpaper Holiday Trans',
         );
 		$this->template->load('template_admin','admin/dashboard',$data);
 	}

@@ -20,7 +20,7 @@ class Detail extends CI_Controller {
         $detail = $this->db->get()->result_array();
         // Di sini Anda dapat mengambil data berdasarkan $judul dan mengirimkannya ke view
         $data = array(
-            'judul_halaman' => 'Detail',
+            'judul_halaman' => 'Detail Admin | Sandpaper Holiday Trans',
             'judul' => $id,
             'konten' => $konten,
             'detail' => $detail,

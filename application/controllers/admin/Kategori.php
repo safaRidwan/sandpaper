@@ -13,7 +13,7 @@ class Kategori extends CI_Controller {
         $this->db->order_by('nama_kategori','ASC');
         $kategori = $this->db->get()->result_array();
         $data = array(
-            'judul_halaman' => 'Kategori',
+            'judul_halaman' => 'Kategori Admin | Sandpaper Holiday Trans',
             'kategori' => $kategori
         );
 		$this->template->load('template_admin','admin/kategori_index',$data);

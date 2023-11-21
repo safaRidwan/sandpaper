@@ -20,7 +20,7 @@ class Booking extends CI_Controller {
         $booking = $this->db->get()->result_array();
         // Di sini Anda dapat mengambil data berdasarkan $judul dan mengirimkannya ke view
         $data = array(
-            'judul_halaman' => 'Booking',
+            'judul_halaman' => 'Booking Admin | Sandpaper Holiday Trans',
             'judul' => $id,
             'konten' => $konten,
             'booking' => $booking

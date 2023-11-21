@@ -19,7 +19,7 @@ class Konten extends CI_Controller {
         $this->db->order_by('tanggal','ASC');
         $konten = $this->db->get()->result_array();
         $data = array(
-            'judul_halaman' => 'Armada',
+            'judul_halaman' => 'Armada Admin | Sandpaper Holiday Trans',
             'kategori' => $kategori,
             'konten' => $konten
         );
